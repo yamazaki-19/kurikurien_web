@@ -1,0 +1,581 @@
+/* キービジュアルコンテナ */
+.kv {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+/* mv画像はロゴの下に */
+.mv_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header_inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* タグマラソン */
+.tag {
+  position: relative;
+  overflow: hidden;
+  margin-top: 33px;
+  width: 100%;
+  background: transparent;
+  white-space: nowrap;
+}
+
+.tag_list {
+  display: inline-flex;
+  animation: marquee 40s linear infinite;
+}
+
+.tag_list li {
+  margin-right: 40px;
+  color: #10790b;
+  list-style: none;
+  font-weight: bold;
+  /* タグ間のスペース */
+  font-size: 16px;
+
+  user-select: none;
+}
+
+/* 右から左へ流すアニメーション */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ブログセクション */
+.blog_section {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 33px;
+  width: 100%;
+  background-color: #00aa3a;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.blog_img_container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  margin-bottom: -33px;
+  width: 100%;
+}
+.blog_main_title {
+  align-self: start;
+  margin: 0s;
+  color: #fff;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: clamp(24px, 6vw, 60px);
+}
+.blog_img_container img {
+  display: block;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+  transform: translateX(150px);
+}
+
+.blog_content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #10790b;
+}
+
+.blog_container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.blog_container time {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.blog_container a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#blog_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+}
+
+#blog_list > li {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+#blog_list > li:hover {
+  transform: translateY(-5px);
+}
+.blog_img img {
+  display: block;
+  padding: 10px;
+  max-width: 300px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/* ここからブランドコンセプト */
+.concept_container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+.concept_side_title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 151px;
+  text-align: center;
+
+  writing-mode: vertical-rl;
+}
+.concept_en {
+  position: absolute;
+  left: -30px;
+  z-index: 10;
+  color: #e9f4ea;
+  letter-spacing: 10px;
+  font-size: 200px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+}
+.concept_main {
+  text-align: center;
+}
+.concept_section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 152px ;
+  text-align: center;
+}
+.concept_title {
+  font-size: 40px;
+}
+.concept_logo {
+  margin-top: 60px ;
+}
+.concept_text {
+  margin-top: 80px;
+  font-size: 20px;
+}
+.concept_columns {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.column_left_title {
+  font-weight: bold;
+  font-size: 32px;
+}
+.concept_columns_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 80px;
+  padding-left: 1.2em;
+  list-style-type: disc;
+  text-align: left;
+}
+.concept_text_container {
+  margin-top: 80px;
+}.column_left {
+  position: relative;
+  padding-bottom: 150px;
+}
+.column_left .btn {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.concept_img {
+  margin-top: 205px;
+  width: 100%;
+  height: auto;
+}
+/* コンセプトボタン */
+.btn {
+  align-items: center;
+  padding: 17px 26px;
+  border-radius: 100px;
+  background-color: #10790b;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color .3s ease;
+}
+.btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: bold;
+  transition: transform .3s ease;
+}
+.btn:hover {
+  background-color: #169e0e;
+}
+.btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* ここからYouTube */
+.youtube_section {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 160px;
+  padding-top: calc(650 / 1440 * 100%);
+  max-width: 1440px;
+  width: 100%;
+  height: 0;
+  /* 背景画像のアスペクト比(高さ÷幅)のパディングで高さ確保 */
+  background: url('../image/youtube_back.png') no-repeat center center;
+  background-size: cover;
+}
+
+/* 埋め込み動画コンテナ */
+.youtube_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 1000px;
+  /* 最大幅 */
+  width: 90%;
+  /* 幅は画面に合わせて縮む */
+  transform: translate(-50%, -50%);
+}
+
+/* 16:9比率で埋め込み */
+.youtube_wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  /* 16:9 の高さ割合 */
+}
+
+.youtube_wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ボタンのコンテナ */
+.youtube_button_container {
+  position: relative;
+  z-index: 20;
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* ボタンスタイル */
+.youtube_btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 17px 26px;
+  border-radius: 100px;
+  background-color: #10790b;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.youtube_btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: bold;
+  transition: transform .3s ease;
+}
+
+.youtube_btn:hover {
+  background-color: #169e0e;
+}
+
+.youtube_btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* スマホ画面対応 */
+@media screen and (max-width: 600px) {
+  .youtube_container {
+    padding: 10px;
+    max-width: 100%;
+    width: 95%;
+  }
+
+  .youtube_button_container {
+    margin-top: 40px;
+  }
+
+  .youtube_btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+/* ここまでYouTube */
+/* ここからお菓子たち */
+.industry_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 280px;
+  text-align: center;
+}
+
+.industry_container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.industry_en {
+  margin-left: -30px;
+  color: #e9f4ea;
+  letter-spacing: 10px;
+  font-size: 200px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+
+  writing-mode: vertical-rl;
+}
+
+.industry_main {
+  display: flex;
+  flex-direction: column;
+  gap: 303px;
+  text-align: left;
+}
+.industry_img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.image_block {
+  position: relative;
+  margin-right: 0;
+  margin-left: auto;
+  width: fit-content;
+}
+.white_box {
+  position: absolute;
+  bottom: -100px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+}
+.industry_text {
+  padding-bottom: 34px;
+}
+.industry_title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.industry_title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  /* 下線の位置 */
+  width: 100%;
+  height: 5px;
+  /* 線の色（例：やさしい緑） */
+  border-radius: 2px;
+  /* 線の太さ */
+  background-color: #10790b;
+}
+@media screen and (max-width: 480px) {
+  .white_box {
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+/* もっと見るボタン */
+/* コンセプトボタン */
+.more_btn {
+  align-items: center;
+  padding: 17px 26px;
+  border-radius: 100px;
+  background-color: #10790b;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color .3s ease;
+}
+
+.more_btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: bold;
+  transition: transform .3s ease;
+}
+
+.more_btn:hover {
+  background-color: #169e0e;
+}
+
+.more_btn:hover .arrow {
+  transform: translateX(4px);
+}
+.instagram_img {
+  position: absolute;
+  left: 0;
+  margin-top: 10px;
+}
+
+/* ここからインスタ */
+.instagram_section {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 191px;
+  width: 100%;
+  background-color: #00aa3a;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.instagram_container {
+  position: relative;
+  z-index: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.instagram_bg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  text-align: end;
+}
+
+.instagram_main {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: self-end;
+  justify-content: center;
+  gap: 128px;
+  padding-top: 116px;
+  text-align: start;
+}
+
+.instagram_title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+/* インスタボタン */
+.instagram_btn {
+  align-items: center;
+  padding: 17px 26px;
+  border-radius: 100px;
+  background-color: #fff;
+  color: #10790b;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color .3s ease;
+}
+
+.instagram_btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: bold;
+  transition: transform .3s ease;
+}
+
+.instagram_btn:hover {
+  background-color: #169e0e;
+  color: #fff;
+}
+
+.instagram_btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* インスタフィード */
+.instagram_posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+}
+.embed {
+  transition: transform .3s ease;
+}
+.embed:hover {
+  transform: translateY(-10px);
+}
