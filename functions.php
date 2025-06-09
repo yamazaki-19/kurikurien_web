@@ -1,26 +1,18 @@
 <?php
-
-// JS・CSSファイルを読み込む
-function add_files()
+// CSSとJSファイルを読み込む
+function my_theme_enqueue_assets()
 {
-    //キャッシュ無効（開発時はこちらをコメント解除）
-    // $cache = date('YmdHis');
-    //キャッシュ有効（公開後はこちらをコメント解除）
-    $cache = 1.0;
+    // ----- CSS -----
+    wp_enqueue_style('destyle', 'https://cdn.jsdelivr.net/npm/destyle.css@4.0.1/destyle.css', array(), null);
+    wp_enqueue_style('base-style', get_template_directory_uri() . '/css/base.css', array(), filemtime(get_template_directory() . '/css/base.css'));
+    wp_enqueue_style('top-style', get_template_directory_uri() . '/css/top.css', array(), filemtime(get_template_directory() . '/css/top.css'));
 
-    // WordPress提供のjquery.jsを読み込まない
-    wp_deregister_script('jquery');
-    // jQueryの読み込み
-    wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js', "", $cache, false);
+    // ----- JavaScript -----
+    // ハンバーガーメニュー用のJS（テーマ内に custom.js を設置する想定）
+    wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/custom.js', array(), filemtime(get_template_directory() . '/js/custom.js'), true);
 
-    // Swiper読み込み（CSS、JS）
-    // Swiper CSS
-    wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
-    // Swiper JavaScript
-    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), false, true);
-
-    // サイト共通（CSS、JS）
-    wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', "", $cache);
-    wp_enqueue_script('main-script', get_template_directory_uri() . '/js/script.js', array('swiper-js'), $cache, true);
+    // Instagram埋め込み用スクリプト
+    wp_enqueue_script('instagram-embed', '//www.instagram.com/embed.js', array(), null, true);
 }
-add_action('wp_enqueue_scripts', 'add_files');
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
+wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/custom.js', array(), filemtime(get_template_directory() . '/js/custom.js'), true);
