@@ -35,6 +35,14 @@ img {
   top: 25px;
   left: 25px;
 }
+@media(max-width: 768px) {
+  .logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 45px;
+  }
+}
 
 /* ハンバーガメニューバー */
 .bar {
@@ -187,6 +195,46 @@ html {
     opacity: 0;
   }
 }
+@media (max-width: 768px) {
+  .scroll_indicator,
+  .scroll_area {
+    bottom: 250px;
+    z-index: 0;
+  }
+
+  .scroll_text {
+    /* ← 小さくする */
+    letter-spacing: 1px;
+    font-size: 10px;
+  }
+
+  .scroll_line {
+    height: 40px;
+    /* ← 線も少し短く */
+  }
+
+  .scroll_line::before {
+    top: -40px;
+    /* ← アニメーション範囲を調整 */
+  }
+
+  @keyframes scrollFlow {
+    0% {
+      top: -40px;
+      opacity: 1;
+    }
+
+    70% {
+      top: 0;
+      opacity: .5;
+    }
+
+    100% {
+      top: 40px;
+      opacity: 0;
+    }
+  }
+}
 /* 公式サイトへ */
 .co_hp {
   margin: 151px 0;
@@ -230,7 +278,11 @@ html {
   display: inline-block;
   transition: opacity .3s;
 }
-
+@media (max-width: 768px) {
+  .top_btn {
+    width: 70px;
+  }
+}
 /* ホバー時にぴょこんと跳ねる */
 .top_btn:hover {
   animation: bounce .4s ease;
