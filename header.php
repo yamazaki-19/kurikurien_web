@@ -36,7 +36,34 @@
 	<meta name="description" content="自社農園「くりくり園」のコーポレートサイト" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 	<?php wp_head(); ?>
-	<!-- WordPressのヘッダー関数を呼び出す。 -->
-	<!-- この関数は、テーマのfunctions.phpで定義されている必要があります。 -->
-	<!-- ここにCSSやJavaScriptの読み込みが自動的に追加されます。 -->
 </head>
+
+<body><?php body_class(); ?>
+	<div class="kv">
+
+		<img class="mv_bg" src="<?= get_template_directory_uri(); ?>/image/mv.png" alt="栗の収穫シーン" width="1440" height="840" />
+		<header>
+			<div class="header_inner">
+				<h1 class="logo">
+					<a href="#concept"><img src="<?= get_template_directory_uri(); ?>/image/logo.png" alt="くりくり園のロゴ" width="90" height="95" /></a>
+				</h1>
+				<!-- ハンバーガーメニューのボタン -->
+				<div class="hamburger" id="hamburger">
+					<div class="bar bar1"></div>
+					<div class="bar bar2"></div>
+					<div class="bar bar3"></div>
+				</div>
+				<!-- ナビゲーションメニュー -->
+				<nav class="hamburger_nav" id="nav">
+					<ul class="nav_title">
+						<li><a href="#top">TOP</a></li>
+						<li><a href="#concept">コンセプト</a></li>
+						<li><a href="#blog">くりくり園探訪記</a></li>
+						<li><a href="#instagram">Instagram</a></li>
+						<li><a href="#industry">栗を使ったお菓子たち</a></li>
+						<li><a href="https://www.takoman.co.jp/" target="_blank" rel="noopener noreferrer">たこまん公式サイト</a></li>
+						<li><a href="https://takoman-farm.jp/" target="_blank" rel="noopener noreferrer">TakomanFarmProject公式サイト</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
