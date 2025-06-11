@@ -1,49 +1,46 @@
 <?php get_header(); ?>
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
+        <h2><?php the_title(); ?></h2>
+        <div><?php the_content(); ?></div>
+    <?php endwhile; ?>
+<?php else : ?>
+    <p>記事が見つかりませんでした。</p>
+<?php endif; ?>
 
-</div>
 <div class="scroll_indicator">
     <span class="scroll_text">scroll</span>
     <span class="scroll_line"></span>
 </div>
 <!-- ここから流れるタグ -->
-<div class="tag">
-    <ul class="tag_list">
-        <li>#北遠の栗</li>
-        <li>#くりくり園</li>
-        <li>#コラボレーション</li>
-        <li>#期間限定スイーツ</li>
-        <li>#栗の食べ方</li>
-        <li>#栗拾い</li>
-        <li>#剪定</li>
-        <li>#収穫祭</li>
-        <li>#イガイガ</li>
-        <li>#たこまん</li>
-        <li>#たこまんファームプロジェクト</li>
-        <li>#みのり</li>
-        <li>#くりくり園探訪記</li>
-        <li>#Instagram</li>
-        <li>#たこまんアウトドア部</li>
-        <li>#イベント</li>
+<ul class="tag_list">
+    <?php
+    $tags = [
+        '#北遠の栗',
+        '#くりくり園',
+        '#コラボレーション',
+        '#期間限定スイーツ',
+        '#栗の食べ方',
+        '#栗拾い',
+        '#剪定',
+        '#収穫祭',
+        '#イガイガ',
+        '#たこまん',
+        '#たこまんファームプロジェクト',
+        '#みのり',
+        '#くりくり園探訪記',
+        '#Instagram',
+        '#たこまんアウトドア部',
+        '#イベント'
+    ];
+    for ($i = 0; $i < 2; $i++) {
+        foreach ($tags as $tag) {
+            echo "<li>{$tag}</li>";
+        }
+    }
+    ?>
+</ul>
 
-        <!-- ここから同じリストをもう1回繰り返す -->
-        <li>#北遠の栗</li>
-        <li>#くりくり園</li>
-        <li>#コラボレーション</li>
-        <li>#期間限定スイーツ</li>
-        <li>#栗の食べ方</li>
-        <li>#栗拾い</li>
-        <li>#剪定</li>
-        <li>#収穫祭</li>
-        <li>#イガイガ</li>
-        <li>#たこまん</li>
-        <li>#たこまんファームプロジェクト</li>
-        <li>#みのり</li>
-        <li>#くりくり園探訪記</li>
-        <li>#Instagram</li>
-        <li>#たこまんアウトドア部</li>
-        <li>#イベント</li>
-    </ul>
-</div>
 <!-- ここまで流れるタグ -->
 <!-- ここからブログ -->
 <section class="blog_section" id="blog">
@@ -485,7 +482,7 @@
             </div>
         </div>
         <div class="instagram_bg">
-            <img src="./image/mountain_white.png" alt="山のイラスト" width="548" height="172">
+            <img src="<?= get_template_directory_uri(); ?>./image/mountain_white.png" alt="山のイラスト" width="548" height="172">
         </div>
 </section>
 <!-- ここまでインスタグラム -->
