@@ -88,7 +88,7 @@
             </li>
         </ul>
         <div class="blog_img_container">
-            <img src="<?= get_template_directory_uri(); ?>./image/mountain_white.png" alt="山のイラスト" width="686" height="172">
+            <img src="<?= get_template_directory_uri(); ?>/image/mountain_white.png" alt="山のイラスト" width="686" height="172">
         </div>
     </div>
 </section>
@@ -480,13 +480,13 @@
             </div>
         </div>
         <div class="instagram_bg">
-            <img src="<?= get_template_directory_uri(); ?>./image/mountain_white.png" alt="山のイラスト" width="548" height="172">
+            <img src="<?= get_template_directory_uri(); ?>/image/mountain_white.png" alt="山のイラスト" width="548" height="172">
         </div>
 </section>
 <!-- ここまでインスタグラム -->
 <!-- ここから公式サイトボタン -->
 <section class="co_hp">
-    <a href="https://www.takoman.co.jp/" target="_blank" rel="noopener noreferrer"><img src="<?= get_template_directory_uri(); ?>./image/takoman-logo.png" alt="公式サイトロゴ" width="325" height="73">
+    <a href="https://www.takoman.co.jp/" target="_blank" rel="noopener noreferrer"><img src="<?= get_template_directory_uri(); ?>/image/takoman-logo.png" alt="公式サイトロゴ" width="325" height="73">
         <p>オフィシャルサイトはこちら</p>
     </a>
 </section>
