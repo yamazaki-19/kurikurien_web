@@ -68,7 +68,15 @@
 
 .tag_list {
   display: inline-flex;
+  margin-right: 40px;
+  color: #10790b;
+  list-style: none;
+  font-weight: bold;
+  /* タグ間のスペース */
+  font-size: 16px;
   animation: marquee 40s linear infinite;
+
+  user-select: none;
 }
 
 .tag_list li {
