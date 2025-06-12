@@ -1,7 +1,1 @@
 @use '../foundation/settings/index' as *;
-
-body.is-open {
-  @include media() {
-    overflow: hidden;
-  }
-}
