@@ -13,7 +13,6 @@
   }
 }
 
-
 /* mv画像はロゴの下に */
 .mv_bg {
   position: absolute;
@@ -40,7 +39,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 20px;
   @media (max-width: 768px) {
     .header_inner {
       align-items: flex-start;
@@ -59,7 +57,7 @@
 .tag {
   position: relative;
   overflow: hidden;
-  margin-top: 33px;
+  margin-top: 43px;
   width: 100%;
   background: transparent;
   white-space: nowrap;

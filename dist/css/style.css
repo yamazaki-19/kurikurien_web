@@ -515,7 +515,7 @@ img {
   padding: 40px 20px;
   width: 450px;
   height: 100vh;
-  background-image: url(../image/hamburger_back.png);
+  background-image: url(image/hamburger_back.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -856,7 +856,6 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
 }
 @media (max-width: 768px) {
   .header_inner .header_inner {
@@ -878,7 +877,7 @@ html {
 .tag {
   position: relative;
   overflow: hidden;
-  margin-top: 33px;
+  margin-top: 43px;
   width: 100%;
   background: transparent;
   white-space: nowrap;
