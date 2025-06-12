@@ -64,6 +64,10 @@
   width: 100%;
   background: transparent;
   white-space: nowrap;
+  @media screen and (max-width: 768px) {
+    margin-top: 16px;
+    padding: 5px 0;
+  }
 }
 
 .tag_list {
@@ -88,6 +92,15 @@
   font-size: 16px;
 
   user-select: none;
+  @media screen and (max-width: 768px) {
+    margin-right: 20px;
+    font-size: 14px;
+
+    li {
+      margin-right: 20px;
+      font-size: 14px;
+    }
+  }
 }
 
 /* 右から左へ流すアニメーション */
