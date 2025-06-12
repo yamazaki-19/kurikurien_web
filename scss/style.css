@@ -759,8 +759,8 @@ html {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 35% center;
-       object-position: 35% center;
+    -o-object-position: 30% center;
+       object-position: 30% center;
   }
 }
 
