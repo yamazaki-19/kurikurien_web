@@ -1,9 +1,16 @@
+@use '../foundation/settings/index' as *;
 /* キービジュアルコンテナ */
 .kv {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  @media (max-width: 768px) {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh;
+  }
 }
 
 /* mv画像はロゴの下に */
@@ -16,6 +23,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @media (max-width: 768px) {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30% center;
+  }
 }
 
 .header_inner {
@@ -25,33 +40,16 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 20px;
-}
+  @media (max-width: 768px) {
+    .header_inner {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 10px;
+    }
 
-@media (max-width: 768px) {
-  .kv {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 60vh;
-  }
-
-  .mv_bg {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 40% center;
-  }
-
-  .header_inner {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .header_inner > * {
-    margin-bottom: 10px;
+    .header_inner > * {
+      margin-bottom: 10px;
+    }
   }
 }
 
