@@ -1,7 +1,14 @@
 <?php get_header(); ?>
 <div class="kv">
-    <img class="mv_bg" src="<?= get_template_directory_uri(); ?>/image/mv.png" alt="栗の収穫シーン" width="1440" height="840" />
+    <picture>
+        <!-- スマホ用画像（幅768px以下） -->
+        <source media="(max-width: 768px)" srcset="<?= get_template_directory_uri(); ?>/image/sp_kv.png">
+
+        <!-- PC用画像（デフォルト） -->
+        <img class="mv_bg" src="<?= get_template_directory_uri(); ?>/image/mv.png" alt="栗の収穫シーン" width="1440" height="840" />
+    </picture>
 </div>
+
 <!-- ここから流れるタグ -->
 <div class="tag">
     <ul class="tag_list">

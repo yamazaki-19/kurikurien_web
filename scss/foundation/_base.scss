@@ -39,9 +39,9 @@ img {
 @media(max-width: 768px) {
   .logo {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 30px;
+    top: 25px;
+    left: 25px;
+    width: 50px;
   }
 }
 
@@ -80,9 +80,9 @@ img {
   width: 450px;
   height: 100vh;
   background-color: #00aa3a;
-  background-image: url(../image/mountain_white.png);
+  background-image: url(../image/hamburger_mountain\ .png);
   background-position: center bottom;
-  background-size: contain;
+  background-size: 400px auto;
   background-repeat: no-repeat;
   box-shadow: -4px 0 8px rgba(0, 0, 0, .1);
   text-align: left;
