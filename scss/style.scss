@@ -1,23 +1,23 @@
 // 初期設定
-@use './foundation/reset';
-@use './foundation/base';
+@use './foundation/reset' as *;
+@use './foundation/base' as *;
 
 
 // 共通パーツ
-@use './object/component';
+@use './object/component' as *;
 
 
 // ページ共通のレイアウト
-@use './layout/header';
-@use './layout/footer';
+@use './layout/header' as *;
+@use './layout/footer' as *;
 
 
 // 特定のセクションやエリア
-@use './object/project/frontPage';
-@use './object/project/single';
-@use './object/project/archive';
-@use './object/project/page';
+@use './object/project/frontPage' as *;
+@use './object/project/single' as *;
+@use './object/project/archive' as *;
+@use './object/project/page' as *;
 
 
 // 強制的に上書き
-@use './object/utility';
+@use './object/utility' as *;

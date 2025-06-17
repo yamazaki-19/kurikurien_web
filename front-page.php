@@ -113,7 +113,7 @@
             <img class="concept_logo" src="<?= get_template_directory_uri(); ?>/image/logo.png" alt="たこまんファームプロジェクトロゴ" width="255" height="270" />
             <p class="concept_text">
                 地元静岡の豊かな土地で大切に育てられた素材たち。<br />
-                育て手の想いを引継ぎ、魅力溢れる素材を私たちたこ満が<br />
+                育て手の想いを引継ぎ、魅力溢れる素材を私たちたこ満が
                 お菓子に変えてお届けするプロジェクト。<br />
                 それが『TAKOMAN FARM PROJECT』です。
             </p>
