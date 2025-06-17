@@ -1525,12 +1525,6 @@ html {
   margin-top: 280px;
   text-align: center;
 }
-@media (max-width: 768px) {
-  .industry_section {
-    margin-top: 140px;
-    padding: 0 20px;
-  }
-}
 
 .industry_container {
   position: relative;
@@ -1544,26 +1538,6 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 768px) {
-  .industry_container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .industry_side_title {
-    display: block;
-    margin-bottom: 40px;
-    width: 100%;
-    text-align: center;
-  }
-}
 
 .industry_en {
   margin-left: -30px;
@@ -1575,19 +1549,6 @@ html {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-}
-@media (max-width: 768px) {
-  .industry_en {
-    margin: 0;
-    color: #e9f4ea;
-    letter-spacing: 4px;
-    font-size: 28px;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.2;
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-  }
 }
 
 .industry_main {
@@ -1601,23 +1562,11 @@ html {
   gap: 303px;
   text-align: left;
 }
-@media (max-width: 768px) {
-  .industry_main {
-    gap: 80px;
-    text-align: left;
-  }
-}
 
 .industry_img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-@media (max-width: 768px) {
-  .industry_img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .image_block {
@@ -1627,12 +1576,6 @@ html {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-@media (max-width: 768px) {
-  .image_block {
-    margin: 0 auto;
-    width: 100%;
-  }
 }
 
 .white_box {
@@ -1645,29 +1588,9 @@ html {
   height: 300px;
   background-color: #fff;
 }
-@media (max-width: 768px) {
-  .white_box {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-top: -30px;
-    padding: 20px;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-  }
-}
 
 .industry_text {
   padding-bottom: 34px;
-}
-@media (max-width: 768px) {
-  .industry_text {
-    padding-bottom: 20px;
-    font-size: 14px;
-  }
 }
 
 .industry_title {
@@ -1676,12 +1599,6 @@ html {
   margin-bottom: 35px;
   font-weight: bold;
   font-size: 24px;
-}
-@media (max-width: 768px) {
-  .industry_title {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
 }
 
 .industry_title::after {
@@ -1696,14 +1613,6 @@ html {
   border-radius: 2px;
   /* 線の太さ */
   background-color: #10790b;
-}
-@media (max-width: 768px) {
-  .industry_title::after {
-    bottom: -6px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-  }
 }
 
 @media screen and (max-width: 480px) {
