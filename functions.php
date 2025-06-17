@@ -3,9 +3,7 @@
 function my_theme_enqueue_assets()
 {
     // ----- CSS -----
-    wp_enqueue_style('destyle', 'https://cdn.jsdelivr.net/npm/destyle.css@4.0.1/destyle.css', array(), null);
-    wp_enqueue_style('base-style', get_template_directory_uri() . '/scss/foundation/_base.scss', array(), filemtime(get_template_directory() . '/scss/foundation/_base.scss'));
-    wp_enqueue_style('top-style', get_template_directory_uri() . '/dist/css/style.css', array(), filemtime(get_template_directory() . '/dist/css/style.css'));
+    wp_enqueue_style('top-style', get_template_directory_uri() . '/css/style.css', array(), filemtime(get_template_directory() . '/css/style.css'));
 
 
     // ----- JavaScript -----

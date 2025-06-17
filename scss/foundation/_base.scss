@@ -73,14 +73,16 @@ img {
   top: 0;
   right: -450px;
   z-index: 999;
+  overflow: scroll;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 30px 20px;
   width: 450px;
   height: 100vh;
-  background-image: url(image/hamburger_back.png);
-  background-position: center;
-  background-size: cover;
+  background-color: #00aa3a;
+  background-image: url(../image/mountain_white.png);
+  background-position: center bottom;
+  background-size: contain;
   background-repeat: no-repeat;
   box-shadow: -4px 0 8px rgba(0, 0, 0, .1);
   text-align: left;
@@ -92,7 +94,7 @@ img {
 }
 
 .nav_title {
-  margin: 160px 56px;
+  margin: 100px 56px;
   padding: 0;
   list-style: none;
 }
