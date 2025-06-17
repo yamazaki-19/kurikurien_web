@@ -1,0 +1,17 @@
+////////////// CSS変数 //////////////
+
+// 色
+:root {
+  --main-color: #00aa3a;
+}
+// フォント
+:root {
+  --fontGothic: 'Noto Sans JP', sans-serif;
+  --fontMincho: 'Noto Serif JP', serif;
+  --fontEnglish: 'Roboto', sans-serif;
+}
+// その他設定
+:root {
+  // アニメーション速度
+  --speed: .4s;
+}
