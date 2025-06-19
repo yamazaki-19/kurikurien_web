@@ -6,13 +6,6 @@
   overflow: hidden;
   width: 100%;
   height: 100vh;
-
-  @include media(768px) {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-  }
 }
 
 /* mv画像はロゴの下に */
@@ -551,6 +544,12 @@
   flex-direction: column;
   margin-top: 280px;
   text-align: center;
+
+  @include media(768px) {
+    margin-top: 140px;
+    padding: 0 20px;
+    text-align: center;
+  }
 }
 
 .industry_container {
@@ -558,24 +557,57 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @include media(768px) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.industry_side_title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  writing-mode: vertical-rl;
+  @include media(768px) {
+    margin-top: 40px;
+    white-space: nowrap;
+    font-size: 16px;
+
+    writing-mode: horizontal-tb;
+  }
 }
 
 .industry_en {
-  margin-left: -30px;
+  position: relative;
+  left: -30px;
+  z-index: 10;
   color: #e9f4ea;
   letter-spacing: 10px;
   font-size: 200px;
   font-family: 'Roboto', sans-serif;
   line-height: 1;
 
-  writing-mode: vertical-rl;
+  @include media(768px) {
+    position: static;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+  }
 }
-
 .industry_main {
   display: flex;
   flex-direction: column;
   gap: 303px;
   text-align: left;
+
+  @include media(768px) {
+    gap: 80px;
+    text-align: center;
+  }
 }
 
 .industry_img {
@@ -589,6 +621,15 @@
   margin-right: 0;
   margin-left: auto;
   width: fit-content;
+
+  @include media(768px) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 12px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .white_box {
@@ -635,7 +676,7 @@
   }
 }
 
-/* コンセプトボタン */
+/* もっと見るボタン */
 .more_btn {
   align-items: center;
   padding: 17px 26px;

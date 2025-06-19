@@ -825,14 +825,6 @@ html {
   width: 100%;
   height: 100vh;
 }
-@media (max-width: 768px) {
-  .kv {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-  }
-}
 
 /* mv画像はロゴの下に */
 .mv_bg {
@@ -1525,6 +1517,13 @@ html {
   margin-top: 280px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .industry_section {
+    margin-top: 140px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
 
 .industry_container {
   position: relative;
@@ -1538,17 +1537,64 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .industry_container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.industry_side_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media (max-width: 768px) {
+  .industry_side_title {
+    margin-top: 40px;
+    white-space: nowrap;
+    font-size: 16px;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
 
 .industry_en {
-  margin-left: -30px;
+  position: relative;
+  left: -30px;
+  z-index: 10;
   color: #e9f4ea;
   letter-spacing: 10px;
   font-size: 200px;
   font-family: "Roboto", sans-serif;
   line-height: 1;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+}
+@media (max-width: 768px) {
+  .industry_en {
+    position: static;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+  }
 }
 
 .industry_main {
@@ -1561,6 +1607,12 @@ html {
           flex-direction: column;
   gap: 303px;
   text-align: left;
+}
+@media (max-width: 768px) {
+  .industry_main {
+    gap: 80px;
+    text-align: center;
+  }
 }
 
 .industry_img {
@@ -1576,6 +1628,23 @@ html {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+@media (max-width: 768px) {
+  .image_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .white_box {
@@ -1622,7 +1691,7 @@ html {
     width: 90%;
   }
 }
-/* コンセプトボタン */
+/* もっと見るボタン */
 .more_btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
