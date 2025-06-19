@@ -408,6 +408,8 @@
 
   @include media(768px) {
     margin-top: 80px;
+    width: 100%;
+    height: auto;
   }
 }
 

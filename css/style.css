@@ -1388,6 +1388,8 @@ html {
 @media (max-width: 768px) {
   .concept_img {
     margin-top: 80px;
+    width: 100%;
+    height: auto;
   }
 }
 
