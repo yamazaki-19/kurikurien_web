@@ -1,0 +1,93 @@
+@use '../scss/foundation/settings/index' as *;
+@use '../scss/foundation/settings/variable' as *;
+
+.breadcrumb {
+  margin-top: 40px;
+  padding-left: 58px;
+  color: $breadcrumb-color;
+  font-weight: bold;
+  font-size: 18px;
+
+  @include media(768px) {
+    padding-left: 16px;
+    font-size: 16px;
+  }
+
+  a {
+    color: $breadcrumb-color;
+    text-decoration: none;
+    transition: color .3s ease;
+
+    &:hover {
+      color: $breadcrumb-hover-color;
+    }
+  }
+}
+// イントロ画像
+.decorated-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 98px auto 0;
+  text-align: center;
+
+  &__top,
+  &__bottom {
+    display: block;
+    width: 25%;
+    height: auto;
+
+    @include media(768px) {
+      width: 60%;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__left {
+    margin-top: 200px;
+    margin-right: 100px;
+    width: 12.5%;
+    height: auto;
+
+    @include media(768px) {
+      display: none; // SPで非表示にする
+    }
+  }
+
+  &__right {
+    margin-bottom: 200px;
+    margin-left: 100px;
+    width: 12.5%;
+    height: auto;
+
+    @include media(768px) {
+      display: none; // SPで非表示にする
+    }
+  }
+
+  &__center {
+    padding: 16px 24px;
+    background-color: #fff;
+    color: #412220;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 100px;
+
+    @include media(768px) {
+      padding: 16px 0;
+      width: 80%;
+      white-space: normal;
+      font-size: 16px;
+      line-height: 50px;
+    }
+  }
+}
+.season_back {
+  z-index: -10;
+  width: 100%;
+  height: auto;
+}

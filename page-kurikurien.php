@@ -1,49 +1,45 @@
 <?php get_header(); ?>
 
-<section class="sub_container">
-    <div class="sub_kv_container">
-        <div class="sub_kv">
-            <h1 class="sub_title">くりくり園の一年</h1>
-            <p class="sub_description">静岡県掛川市の豊かな自然が育んだ『掛川栗』
-                日々のご褒美や特別なひとときに、美味しさがぎゅっと詰まったこの栗を
-                お菓子として楽しんでいただきたいーーそんな想いを込めて育てています。
-            </p>
-            <p class="sub_description">ここでは、くりくり園の一年の歩みをご紹介します。</p>
-        </div>
-        <div class="sub_kv_image">
-            <img src="<?php echo get_template_directory_uri(); ?>/image/sub_kv.png" alt="くりくり園のイメージ画像">
-        </div>
-    </div>
+<section class="sub_kv">
+    <picture>
+        <!-- スマホ用画像（768px以下） -->
+        <source srcset="<?php echo get_template_directory_uri(); ?>/image/sp_sub_kv.png" media="(max-width: 768px)">
+        <!-- デフォルト画像（PC用） -->
+        <img src="<?php echo get_template_directory_uri(); ?>/image/sub_kv_all.png" alt="くりくり園のイメージ画像">
+    </picture>
 </section>
+<!-- パンくずリスト -->
+<div class="breadcrumb">
+    <a href="<?php echo home_url(); ?>">TOP</a> &gt; <span>くりくり園の一年</span>
+</div>
 
-<section class="kurinen-year">
-    <div class="container">
-        <h2 class="section-title">くりくり園の一年</h2>
+<div class="decorated-box">
+    <!-- 上部の画像 -->
+    <img src="<?= get_template_directory_uri(); ?>/image/3malon.png" alt="" width="397" height="127" class="decorated-box__top">
 
-        <!-- 春 -->
-        <section class="season season-spring">
-            <h3 class="season-title">春</h3>
-            <div class="season-content">
-                <div class="text-box">
-                    <p>春の作業内容などのテキスト</p>
-                </div>
-                <div class="image-box">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/spring01.jpg" alt="春の作業風景1">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/spring02.jpg" alt="春の作業風景2">
-                    <!-- 必要な枚数分 -->
-                </div>
-            </div>
-        </section>
+    <div class="decorated-box__middle">
+        <!-- 左右の画像 -->
+        <img src="<?= get_template_directory_uri(); ?>/image/red_tree.png" alt="" width="138" height="118" class="decorated-box__left">
+        <div class="decorated-box__center">
+            栗の木の育成からお菓子の仕上げまで、<br>
+            ほぼ全ての工程を職人たちの手作業によって行われています。<br>
+            お菓子を通し、お客様に笑顔をお届けすること、<br>
+            それが私たち「たこまん」の願いです。
+        </div>
+        <img src="<?= get_template_directory_uri(); ?>/image/glass.png" alt="" width="107" height="106" class="decorated-box__right">
+    </div>
 
-        <!-- 夏 -->
-        <section class="season season-summer">
-            <h3 class="season-title">夏</h3>
-            <div class="season-content">
-                <!-- 同様にテキストと画像 -->
-            </div>
-        </section>
+    <!-- 下部の画像 -->
+    <img src="<?= get_template_directory_uri(); ?>/image/3malon.png" alt="" width="397" height="127" class="decorated-box__bottom">
+</div>
 
-        <!-- 秋・冬も同様に -->
+<div class="season_back">
+    <img src="<?= get_template_directory_uri(); ?>/image/mountain_back.png" alt="">
+</div>
+<section class=" season">
+    <div class="season_inner">
+
+
     </div>
 </section>
 
