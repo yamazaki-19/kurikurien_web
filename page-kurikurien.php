@@ -1,4 +1,20 @@
 <?php get_header(); ?>
+<section class="sub_container">
+    <div class="sub_kv_container">
+        <div class="sub_kv">
+            <h1 class="sub_title">くりくり園の一年</h1>
+            <p class="sub_description">静岡県掛川市の豊かな自然が育んだ『掛川栗』
+                日々のご褒美や特別なひとときに、美味しさがぎゅっと詰まったこの栗を
+                お菓子として楽しんでいただきたいーーそんな想いを込めて育てています。
+            </p>
+            <p class="sub_description">ここでは、くりくり園の一年の歩みをご紹介します。</p>
+        </div>
+        <div class="sub_kv_image">
+            <img src="<?php echo get_template_directory_uri(); ?>/image/sub_kv.png" alt="くりくり園のイメージ画像">
+        </div>
+    </div>
+</section>
+
 <section class="kurinen-year">
     <div class="container">
         <h2 class="section-title">くりくり園の一年</h2>
