@@ -158,7 +158,7 @@
         </div>
     </div>
     <div class="youtube_button_container">
-        <a href="#" class="youtube_btn">くりくり園の一年<span class="arrow">→</span></a>
+        <a href="<?php echo get_permalink(get_page_by_path('kurikurien')); ?>" class="youtube_btn">くりくり園の一年<span class="arrow">→</span></a>
     </div>
 </section>
 <!-- ここまでユーチューブ -->
@@ -493,11 +493,5 @@
         </div>
 </section>
 <!-- ここまでインスタグラム -->
-<!-- ここから公式サイトボタン -->
-<section class="co_hp">
-    <a href="https://www.takoman.co.jp/" target="_blank" rel="noopener noreferrer"><img src="<?= get_template_directory_uri(); ?>/image/takoman-logo.png" alt="公式サイトロゴ" width="325" height="73">
-        <p>オフィシャルサイトはこちら</p>
-    </a>
-</section>
-<!-- ここまで公式サイトボタン -->
+
 <?php get_footer(); ?>
