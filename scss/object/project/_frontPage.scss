@@ -276,6 +276,7 @@
     position: static;
     right: 0;
     left: 0;
+    z-index: 0;
     margin: 0 auto;
     text-align: center;
     font-size: 80px;
@@ -456,6 +457,7 @@
   background-size: 100%;
 
   @include media(768px) {
+    z-index: 0;
     margin-top: 80px;
     padding-top: calc(200 / 375 * 100%); // SP用のアスペクト比（例：200pxの高さ / 375px幅）
     background-size: cover;
@@ -605,6 +607,7 @@
     position: static;
     right: 0;
     left: 0;
+    z-index: 0;
     margin: 0 auto;
     text-align: center;
     font-size: 80px;
