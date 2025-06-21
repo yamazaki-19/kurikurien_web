@@ -88,6 +88,209 @@
 }
 .season_back {
   z-index: -10;
+  display: block;
   width: 100%;
   height: auto;
+}
+// シーズン
+.season {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: -800px;
+  background-color: #00aa3a;
+
+  @include media(768px) {
+    flex-direction: column;
+    margin-bottom: 120px;
+    &:not(.other) {
+      margin-top: -200px;
+    }
+    &.other {
+      margin-top: 152px;
+    }
+  }
+  &.other {
+    margin-top: 0;
+    padding-top: 200px;
+    background-color: #00aa3a;
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}
+.season_label {
+  position: relative;
+  left: -13px;
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+
+  writing-mode: vertical-rl;
+  @include media(768px) {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+
+    writing-mode: horizontal-tb;
+  }
+  &.reverse {
+    right: 0;
+    left: auto;
+    margin-left: auto;
+  }
+}
+.season_heading h2 {
+  display: inline-block;
+  margin-top: -10px;
+  padding-top: 0;
+  color: #fff;
+  font-size: 128px;
+  line-height: 1;
+
+  @include media(768px) {
+    margin-top: -5px;
+    font-size: 64px;
+  }
+}
+.season_description {
+  margin: 50px;
+  padding: 98px 44px;
+  max-width: 520px;
+  height: auto;
+  border-radius: 100px;
+  background-color: #fff;
+
+  @include media(768px) {
+    margin: 24px;
+    padding: 40px 24px;
+    border-radius: 50px;
+    p {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+  p {
+    margin-bottom: 1.5em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.season_heading_inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+
+  @include media(768px) {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .season.reverse & {
+    flex-direction: row-reverse;
+  }
+}
+.season_tags {
+  display: block;
+  margin: 0 auto;
+
+  @include media(768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+}
+.season_tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  padding: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 20px;
+
+  @include media(768px) {
+    margin-right: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 16px;
+  }
+}
+
+/* Splide カスタマイズ */
+.season_slider {
+  margin: 0 auto;
+  margin-right: 0;
+  max-width: 800px;
+  height: 100%;
+
+  @include media(768px) {
+    order: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 90%;
+  }
+}
+.season_slider .splide__track {
+  position: relative;
+}
+.season_slider .splide__slide {
+  position: relative;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+
+.season_slider .splide__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @include media(768px) {
+    border-radius: 50px;
+  }
+}
+
+.splide__pagination {
+  bottom: 1.5em;
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+
+  @include media(768px) {
+    bottom: 1em;
+    gap: 16px;
+  }
+}
+
+.splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e9f4ea;
+  opacity: 1;
+  transition: background-color .5s ease;
+
+  @include media(768px) {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.splide__pagination__page.is-active {
+  background-color: #10790b;
 }
