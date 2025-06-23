@@ -1,0 +1,24 @@
+// 初期設定
+@use './foundation/reset' as *;
+@use './foundation/base' as *;
+
+
+// 共通パーツ
+@use './object/component' as *;
+
+
+// ページ共通のレイアウト
+@use './layout/header' as *;
+@use './layout/footer' as *;
+
+
+// 特定のセクションやエリア
+@use './object/project/frontPage' as *;
+@use './object/project/single' as *;
+@use './object/project/archive' as *;
+@use './object/project/page' as *;
+@use './object/project/page-kurikurien' as *;
+
+
+// 強制的に上書き
+@use './object/utility' as *;
