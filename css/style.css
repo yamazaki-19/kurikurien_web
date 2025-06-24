@@ -1446,7 +1446,7 @@ html {
   background: url("../image/youtube_back.png") no-repeat center center;
   background-size: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .youtube_section {
     z-index: 0;
     margin-top: 80px;
@@ -1460,7 +1460,6 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px;

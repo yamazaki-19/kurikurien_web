@@ -158,7 +158,7 @@
         </div>
     </div>
     <div class="youtube_button_container">
-        <a href="<?php echo get_permalink(get_page_by_path('kurikurien')); ?>" class="youtube_btn">くりくり園の一年<span class="arrow">→</span></a>
+        <a href="<?php echo get_permalink(get_page_by_path('kurikurien')); ?> " class="youtube_btn ">くりくり園の一年<span class="arrow">→</span></a>
     </div>
 </section>
 <!-- ここまでユーチューブ -->
