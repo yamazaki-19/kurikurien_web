@@ -9,26 +9,25 @@
 	<meta name="format-detection" content="telephone=no" />
 
 	<!-- ファビコン画像の指定。 -->
-	<link rel="icon" type="image/png" href="fav.png" />
+	<link rel="icon" href="<?= get_template_directory_uri(); ?>/fav.png" />
+
 
 	<!-- スマホでホームにサイトを追加したときに表示するアイコン画像の指定。 -->
 	<link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
 
 	<!--SNS共有関係-->
-	<meta property="og:url" content="ページのURL" />
+	<meta property="og:url" content="<?= home_url(); ?>" />
 	<meta property="og:title" content="自社農園「くりくり園」Webサイト" />
-	<meta property="og:type" content="ページのタイプ" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="くりくり園公式サイト" />
 	<meta property="og:description" content="2021年から自社農園化した「くりくり園」。日々の活動報告や限定商品を紹介していきます。" />
-	<meta property="og:image" content="画像のURL" />
-	<!--絶対パスのURLで設定-->
-	<meta name="twitter:card" content="カード種類" />
-	<meta name="twitter:site" content="@Twitterユーザー名" />
-	<meta property="og:site_name" content="サイト名" />
-	<meta property="fb:app_id" content="appIDを入力" />
-	<!--なければ削除-->
+	<meta property="og:image" content="<?= get_template_directory_uri(); ?>/image/kurikurien_img.jpg" />
 
-	<!--【開発用】検索除外　本番公開したら必ず削除すること！-->
-	<meta name="robots" content="noindex,nofollow" />
+	<!--絶対パスのURLで設定-->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="自社農園「くりくり園」Webサイト" />
+	<meta name="twitter:description" content="2021年から自社農園化した「くりくり園」。日々の活動報告や限定商品を紹介していきます。" />
+	<meta name="twitter:image" content="<?= get_template_directory_uri(); ?>/image/kurikurien_img.jpg" />
 
 
 
