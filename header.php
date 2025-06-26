@@ -9,7 +9,7 @@
 	<meta name="format-detection" content="telephone=no" />
 
 	<!-- ファビコン画像の指定。 -->
-	<link rel="icon" href="<?= get_template_directory_uri(); ?>/fav.png" />
+	<link rel="icon" href="<?= get_template_directory_uri(); ?>/image/favicon.png" />
 
 
 	<!-- スマホでホームにサイトを追加したときに表示するアイコン画像の指定。 -->
