@@ -12,7 +12,12 @@
 <div class="breadcrumb">
     <a href="<?php echo home_url(); ?>">TOP</a> &gt; <span>くりくり園の一年</span>
 </div>
-
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="page_content">
+            <?php the_content(); ?>
+        </div>
+<?php endwhile;
+endif; ?>
 <div class="decorated-box">
     <!-- 上部の画像 -->
     <img src="<?= get_template_directory_uri(); ?>/image/3malon.png" alt="" width="397" height="127" class="decorated-box__top">
