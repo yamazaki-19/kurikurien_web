@@ -1,4 +1,5 @@
 @use './settings/index' as *;
+@use '../foundation/settings/index' as *;
 
 body {
   color: #222;
