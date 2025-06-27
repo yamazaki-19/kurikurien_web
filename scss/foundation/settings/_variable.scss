@@ -19,3 +19,27 @@
 // パンくずリスト
 $breadcrumb-color: #10790b;
 $breadcrumb-hover-color: #169e0e;
+
+// === fade-in animation用 ===
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadein {
+  opacity: 0;
+  transition: opacity .8s ease, transform .8s ease;
+  transform: translateY(30px);
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

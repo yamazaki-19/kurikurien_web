@@ -35,7 +35,7 @@
 <div class="season_back">
     <img src="<?= get_template_directory_uri(); ?>/image/mountain_back.png" alt="">
 </div>
-<section class="season">
+<section class="season fadein">
     <div class="season_inner">
         <div class="season_heading">
             <div class="season_heading_inner">
@@ -114,9 +114,9 @@
     </div>
 </section>
 <!-- 秋 -->
-<section class="season autumn other">
+<section class="season autumn other ">
     <div class="season_inner">
-        <div class="season_heading">
+        <div class="season_heading ">
             <div class="season_heading_inner">
                 <p class="season_label">Autumn</p>
                 <h2>秋</h2>

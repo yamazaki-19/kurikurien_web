@@ -64,3 +64,9 @@
 			</nav>
 		</div>
 	</header>
+	<div class="scroll_indicator">
+		<div class="scroll_area">
+			<p class="scroll_text">SCROLL</p>
+			<div class="scroll_line"></div>
+		</div>
+	</div>

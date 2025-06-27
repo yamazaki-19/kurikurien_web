@@ -11,6 +11,11 @@
 </footer>
 <!-- ここまでフッター -->
 <?php wp_footer(); ?>
+<!-- Splide JS（JavaScriptはページの最後が効率的） -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+
+<!-- 自作のJS（Splideを使う） -->
+<script src="<?= get_template_directory_uri(); ?>/js/fadein.js"></script>
 </body>
 
 </html>

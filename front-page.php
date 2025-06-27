@@ -12,7 +12,7 @@
 <!-- ここから流れるタグ -->
 <div class="tag">
     <ul class="tag_list">
-        <li>#北遠の栗</li>
+        <li>a#北遠の栗</li>
         <li>#くりくり園</li>
         <li>#コラボレーション</li>
         <li>#期間限定スイーツ</li>
@@ -50,7 +50,7 @@
 </div>
 <!-- ここまで流れるタグ -->
 <!-- ここからブログ -->
-<section class="blog_section" id="blog">
+<section class="blog_section fadein" id="blog">
     <h2 class="blog_main_title">くりくり園探訪記</h2>
     <div class="blog_container">
         <ul id="blog_list">
@@ -103,7 +103,7 @@
 </section>
 <!-- ここまでブログ -->
 <!-- ここからブランドコンセプト -->
-<section class="concept_section" id="concept">
+<section class="concept_section fadein" id="concept">
     <div class="concept_container">
         <div class="concept_side_title">
             <span class="concept_en">concept</span>
@@ -148,7 +148,7 @@
 </section>
 <!-- ここまでブランドコンセプト -->
 <!-- ここからユーチューブ -->
-<section class="youtube_section">
+<section class="youtube_section fadein">
     <div class="youtube_container">
         <div class="youtube_wrapper">
             <iframe src="https://www.youtube.com/embed/-RensusCMvI?si=F6ALNL1AF0G38byM" title="YouTube video" style="border: none;"
@@ -163,7 +163,7 @@
 </section>
 <!-- ここまでユーチューブ -->
 <!-- ここからお菓子たち -->
-<section class="industry_section" id="industry">
+<section class="industry_section fadein" id="industry">
     <div class="industry_container">
         <div class="industry_side_title">
             <span class="industry_en">industry</span>
@@ -200,7 +200,7 @@
 <!-- ここまでお菓子たち -->
 <img class="instagram_img" src="<?= get_template_directory_uri(); ?>/image/tree_green.png" alt="木のイラスト" width="183" height="201">
 <!-- ここからインスタグラム -->
-<section class="instagram_section" id="instagram">
+<section class="instagram_section fadein" id="instagram">
     <div class="instagram_container">
 
         <!-- 見出し・説明・ボタン -->
