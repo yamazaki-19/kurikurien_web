@@ -612,7 +612,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 20px;
+  padding: 20px 20px;
   width: 450px;
   height: 100vh;
   background-color: #00aa3a;
@@ -654,9 +654,9 @@ img {
 
 .nav_title a::after {
   content: "";
-  position: absolute;
   bottom: 0;
   left: 0;
+  display: block;
   width: 0;
   height: 2px;
   background: #fff;
@@ -670,6 +670,13 @@ img {
   /* ホバー or フォーカスで下線にゅっと出る */
 }
 
+@media screen and (max-width: 768px) {
+  .nav_title a::after {
+    width: 0;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
 /* スクロール時の動き */
 html {
   scroll-behavior: smooth;
@@ -2121,11 +2128,11 @@ html {
     margin-top: -100px;
   }
   .season.reverse {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
     padding-bottom: 50px;
   }
 }
