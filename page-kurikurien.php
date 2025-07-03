@@ -77,7 +77,7 @@
 <!-- 夏（反転） -->
 <section class="season summer other reverse">
     <div class="season_inner">
-        <div class="season_heading">
+        <div class="season_heading fadein">
             <div class="season_heading_inner">
                 <p class="season_label reverse">Summer</p>
                 <h2>夏</h2>
@@ -116,7 +116,7 @@
 <!-- 秋 -->
 <section class="season autumn other ">
     <div class="season_inner">
-        <div class="season_heading ">
+        <div class="season_heading fadein">
             <div class="season_heading_inner">
                 <p class="season_label">Autumn</p>
                 <h2>秋</h2>
@@ -156,7 +156,7 @@
 <!-- 冬（反転） -->
 <section class="season winter other reverse">
     <div class="season_inner ">
-        <div class="season_heading">
+        <div class="season_heading fadein">
             <div class="season_heading_inner">
                 <p class="season_label reverse">Winter</p>
                 <h2>冬</h2>
