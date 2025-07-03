@@ -35,9 +35,9 @@
 <div class="season_back">
     <img src="<?= get_template_directory_uri(); ?>/image/mountain_back.png" alt="">
 </div>
-<section class="season fadein">
+<section class="season ">
     <div class="season_inner">
-        <div class="season_heading">
+        <div class="season_heading fadein">
             <div class="season_heading_inner">
                 <p class="season_label">Spring</p>
                 <h2>春</h2>
