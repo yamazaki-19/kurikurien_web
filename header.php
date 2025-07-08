@@ -13,7 +13,7 @@
 
 
 	<!-- スマホでホームにサイトを追加したときに表示するアイコン画像の指定。 -->
-	<link rel="apple-touch-icon" sizes="180x180" href="icon.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri(); ?>/image/site_icon.png" />
 
 	<!--SNS共有関係-->
 	<meta property="og:url" content="<?= home_url(); ?>" />
@@ -27,7 +27,8 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content="自社農園「くりくり園」Webサイト" />
 	<meta name="twitter:description" content="2021年から自社農園化した「くりくり園」。日々の活動報告や限定商品を紹介していきます。" />
-	<meta name="twitter:image" content="<?= get_template_directory_uri(); ?>/image/kurikurien_img.jpg" />
+	<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/image/kurikurien_img.jpg" />
+
 
 
 
