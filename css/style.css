@@ -2,7 +2,9 @@
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
-*, ::before, ::after {
+*,
+::before,
+::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-width: 0;
@@ -43,22 +45,36 @@ main {
 
 /* Vertical rhythm */
 /* ============================================ */
-p, table, blockquote, address, pre, iframe, form, figure, dl {
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
   margin: 0;
 }
 
 /* Headings */
 /* ============================================ */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
-  font-size: inherit;
   font-weight: inherit;
+  font-size: inherit;
   line-height: inherit;
 }
 
 /* Lists (enumeration) */
 /* ============================================ */
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -86,12 +102,12 @@ hr {
   overflow: visible;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  margin: 0;
   /* 1 */
   height: 0;
-  margin: 0;
-  color: inherit;
   /* 2 */
   border-top-width: 1px;
+  color: inherit;
 }
 
 /**
@@ -99,9 +115,9 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
   /* 1 */
   font-size: inherit;
+  font-family: monospace, monospace;
   /* 2 */
 }
 
@@ -115,9 +131,9 @@ address {
  * Remove the gray background on active links in IE 10.
  */
 a {
-  text-decoration: none;
-  color: inherit;
   background-color: transparent;
+  color: inherit;
+  text-decoration: none;
 }
 
 /**
@@ -135,7 +151,8 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
@@ -143,10 +160,12 @@ b, strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-code, kbd, samp {
-  font-family: monospace, monospace;
+code,
+kbd,
+samp {
   /* 1 */
   font-size: inherit;
+  font-family: monospace, monospace;
   /* 2 */
 }
 
@@ -161,11 +180,12 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-sub, sup {
+sub,
+sup {
   position: relative;
+  vertical-align: baseline;
   font-size: 75%;
   line-height: 0;
-  vertical-align: baseline;
 }
 
 sub {
@@ -181,7 +201,10 @@ sup {
 /**
  * Prevent vertical alignment issues.
  */
-img, embed, object, iframe {
+img,
+embed,
+object,
+iframe {
   vertical-align: bottom;
 }
 
@@ -190,16 +213,20 @@ img, embed, object, iframe {
 /**
  * Reset form fields to make them styleable
  */
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   margin: 0;
   padding: 0;
-  font: inherit;
-  text-align: inherit;
-  vertical-align: middle;
-  color: inherit;
-  border-radius: 0;
   outline: 0;
+  border-radius: 0;
   background: transparent;
+  color: inherit;
+  vertical-align: middle;
+  text-align: inherit;
+  font: inherit;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
@@ -224,7 +251,8 @@ button, input, optgroup, select, textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-button, input {
+button,
+input {
   /* 1 */
   overflow: visible;
 }
@@ -233,7 +261,8 @@ button, input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-button, select {
+button,
+select {
   /* 1 */
   text-transform: none;
 }
@@ -241,21 +270,30 @@ button, select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-button, [type=button], [type=reset], [type=submit] {
+button,
+[type=button],
+[type=reset],
+[type=submit] {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
 }
 
-button[disabled], [type=button][disabled], [type=reset][disabled], [type=submit][disabled] {
+button[disabled],
+[type=button][disabled],
+[type=reset][disabled],
+[type=submit][disabled] {
   cursor: default;
 }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   padding: 0;
   border-style: none;
 }
@@ -263,7 +301,10 @@ button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-fo
 /**
  * Restore the focus styles unset by the previous rule.
  */
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -285,9 +326,9 @@ option {
  * Reset to invisible
  */
 fieldset {
-  min-width: 0;
   margin: 0;
   padding: 0;
+  min-width: 0;
 }
 
 /**
@@ -300,12 +341,12 @@ legend {
   /* 2 */
   display: table;
   /* 1 */
-  max-width: 100%;
-  /* 1 */
   padding: 0;
+  /* 1 */
+  max-width: 100%;
+  color: inherit;
   /* 3 */
   white-space: normal;
-  color: inherit;
   /* 1 */
 }
 
@@ -326,7 +367,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -397,14 +439,15 @@ caption {
   text-align: left;
 }
 
-td, th {
+td,
+th {
   padding: 0;
   vertical-align: top;
 }
 
 th {
-  font-weight: bold;
   text-align: left;
+  font-weight: bold;
 }
 
 /* Misc */
@@ -1880,9 +1923,14 @@ html {
 
 .instagram_bg {
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   max-width: 100%;
   height: auto;
-  text-align: end;
 }
 
 .instagram_main {
@@ -1891,9 +1939,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: self-end;
-      -ms-flex-align: self-end;
-          align-items: self-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

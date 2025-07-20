@@ -3,10 +3,12 @@
 /* Reset box-model and set borders */
 /* ============================================ */
 
-*, ::before, ::after {
-    box-sizing: border-box;
-    border-width: 0;
-    border-style: solid;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
 }
 
 /* Document */
@@ -19,13 +21,13 @@
  */
 
 html {
-    line-height: 1.15;
-    /* 1 */
+  line-height: 1.15;
+  /* 1 */
 
-    -webkit-text-size-adjust: 100%;
-    /* 2 */
-    -webkit-tap-highlight-color: transparent;
-    /* 3*/
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
 }
 
 /* Sections */
@@ -36,7 +38,7 @@ html {
  */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 /**
@@ -44,44 +46,58 @@ body {
  */
 
 main {
-    display: block;
+  display: block;
 }
 
 /* Vertical rhythm */
 /* ============================================ */
 
-p, table, blockquote, address, pre, iframe, form, figure, dl {
-    margin: 0;
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
 }
 
 /* Headings */
 /* ============================================ */
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    font-size: inherit;
-    font-weight: inherit;
-    line-height: inherit;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 /* Lists (enumeration) */
 /* ============================================ */
 
-ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Lists (definition) */
 /* ============================================ */
 
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 dd {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 /* Grouping content */
@@ -93,16 +109,16 @@ dd {
  */
 
 hr {
-    clear: both;
-    /* 1 */
-    overflow: visible;
-    box-sizing: content-box;
-    /* 1 */
-    height: 0;
-    margin: 0;
-    color: inherit;
-    /* 2 */
-    border-top-width: 1px;
+  clear: both;
+  /* 1 */
+  overflow: visible;
+  box-sizing: content-box;
+  margin: 0;
+  /* 1 */
+  height: 0;
+  /* 2 */
+  border-top-width: 1px;
+  color: inherit;
 }
 
 /**
@@ -111,14 +127,14 @@ hr {
  */
 
 pre {
-    font-family: monospace, monospace;
-    /* 1 */
-    font-size: inherit;
-    /* 2 */
+  /* 1 */
+  font-size: inherit;
+  font-family: monospace, monospace;
+  /* 2 */
 }
 
 address {
-    font-style: inherit;
+  font-style: inherit;
 }
 
 /* Text-level semantics */
@@ -129,9 +145,9 @@ address {
  */
 
 a {
-    text-decoration: none;
-    color: inherit;
-    background-color: transparent;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
 }
 
 /**
@@ -140,18 +156,19 @@ a {
  */
 
 abbr[title] {
-    text-decoration: underline;
-    /* 2 */
-    text-decoration: underline dotted;
-    /* 2 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-b, strong {
-    font-weight: bolder;
+b,
+strong {
+  font-weight: bolder;
 }
 
 /**
@@ -159,11 +176,13 @@ b, strong {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-code, kbd, samp {
-    font-family: monospace, monospace;
-    /* 1 */
-    font-size: inherit;
-    /* 2 */
+code,
+kbd,
+samp {
+  /* 1 */
+  font-size: inherit;
+  font-family: monospace, monospace;
+  /* 2 */
 }
 
 /**
@@ -171,7 +190,7 @@ code, kbd, samp {
  */
 
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 /**
@@ -179,19 +198,20 @@ small {
  * all browsers.
  */
 
-sub, sup {
-    position: relative;
-    font-size: 75%;
-    line-height: 0;
-    vertical-align: baseline;
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
 }
 
 sub {
-    bottom: -.25em;
+  bottom: -.25em;
 }
 
 sup {
-    top: -.5em;
+  top: -.5em;
 }
 
 /* Embedded content */
@@ -201,8 +221,11 @@ sup {
  * Prevent vertical alignment issues.
  */
 
-img, embed, object, iframe {
-    vertical-align: bottom;
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
 }
 
 /* Forms */
@@ -212,19 +235,23 @@ img, embed, object, iframe {
  * Reset form fields to make them styleable
  */
 
-button, input, optgroup, select, textarea {
-    margin: 0;
-    padding: 0;
-    font: inherit;
-    text-align: inherit;
-    vertical-align: middle;
-    color: inherit;
-    border-radius: 0;
-    outline: 0;
-    background: transparent;
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  vertical-align: middle;
+  text-align: inherit;
+  font: inherit;
 
-    -webkit-appearance: none;
-            appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
 /**
@@ -232,13 +259,13 @@ button, input, optgroup, select, textarea {
  */
 
 [type='checkbox'] {
-    -webkit-appearance: checkbox;
-            appearance: checkbox;
+  -webkit-appearance: checkbox;
+          appearance: checkbox;
 }
 
 [type='radio'] {
-    -webkit-appearance: radio;
-            appearance: radio;
+  -webkit-appearance: radio;
+          appearance: radio;
 }
 
 /**
@@ -246,9 +273,10 @@ button, input, optgroup, select, textarea {
  * 1. Show the overflow in Edge.
  */
 
-button, input {
-    /* 1 */
-    overflow: visible;
+button,
+input {
+  /* 1 */
+  overflow: visible;
 }
 
 /**
@@ -256,41 +284,54 @@ button, input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 
-button, select {
-    /* 1 */
-    text-transform: none;
+button,
+select {
+  /* 1 */
+  text-transform: none;
 }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button, [type='button'], [type='reset'], [type='submit'] {
-    cursor: pointer;
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
 
-    -webkit-appearance: none;
-            appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
-button[disabled], [type='button'][disabled], [type='reset'][disabled], [type='submit'][disabled] {
-    cursor: default;
+button[disabled],
+[type='button'][disabled],
+[type='reset'][disabled],
+[type='submit'][disabled] {
+  cursor: default;
 }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
 
-button::-moz-focus-inner, [type='button']::-moz-focus-inner, [type='reset']::-moz-focus-inner, [type='submit']::-moz-focus-inner {
-    padding: 0;
-    border-style: none;
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
 }
 
 /**
  * Restore the focus styles unset by the previous rule.
  */
 
-button:-moz-focusring, [type='button']:-moz-focusring, [type='reset']:-moz-focusring, [type='submit']:-moz-focusring {
-    outline: 1px dotted ButtonText;
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 /**
@@ -298,7 +339,7 @@ button:-moz-focusring, [type='button']:-moz-focusring, [type='reset']:-moz-focus
  */
 
 select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 /**
@@ -306,7 +347,7 @@ select::-ms-expand {
  */
 
 option {
-    padding: 0;
+  padding: 0;
 }
 
 /**
@@ -314,9 +355,9 @@ option {
  */
 
 fieldset {
-    min-width: 0;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
 }
 
 /**
@@ -327,16 +368,16 @@ fieldset {
  */
 
 legend {
-    /* 2 */
-    display: table;
-    /* 1 */
-    max-width: 100%;
-    /* 1 */
-    padding: 0;
-    /* 3 */
-    white-space: normal;
-    color: inherit;
-    /* 1 */
+  /* 2 */
+  display: table;
+  /* 1 */
+  padding: 0;
+  /* 1 */
+  max-width: 100%;
+  color: inherit;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -344,7 +385,7 @@ legend {
  */
 
 progress {
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 
 /**
@@ -352,15 +393,16 @@ progress {
  */
 
 textarea {
-    overflow: auto;
+  overflow: auto;
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type='number']::-webkit-inner-spin-button, [type='number']::-webkit-outer-spin-button {
-    height: auto;
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
 }
 
 /**
@@ -368,8 +410,8 @@ textarea {
  */
 
 [type='search'] {
-    outline-offset: -2px;
-    /* 1 */
+  outline-offset: -2px;
+  /* 1 */
 }
 
 /**
@@ -377,7 +419,7 @@ textarea {
  */
 
 [type='search']::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 /**
@@ -386,11 +428,11 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-    /* 1 */
-    font: inherit;
+  /* 1 */
+  font: inherit;
 
-    -webkit-appearance: button;
-    /* 2 */
+  -webkit-appearance: button;
+  /* 2 */
 }
 
 /**
@@ -398,7 +440,7 @@ textarea {
  */
 
 label[for] {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Interactive */
@@ -409,7 +451,7 @@ label[for] {
  */
 
 details {
-    display: block;
+  display: block;
 }
 
 /*
@@ -417,7 +459,7 @@ details {
  */
 
 summary {
-    display: list-item;
+  display: list-item;
 }
 
 /*
@@ -425,29 +467,30 @@ summary {
  */
 
 [contenteditable] {
-    outline: none;
+  outline: none;
 }
 
 /* Table */
 /* ============================================ */
 
 table {
-    border-spacing: 0;
-    border-collapse: collapse;
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
 caption {
-    text-align: left;
+  text-align: left;
 }
 
-td, th {
-    padding: 0;
-    vertical-align: top;
+td,
+th {
+  padding: 0;
+  vertical-align: top;
 }
 
 th {
-    font-weight: bold;
-    text-align: left;
+  text-align: left;
+  font-weight: bold;
 }
 
 /* Misc */
@@ -458,7 +501,7 @@ th {
  */
 
 template {
-    display: none;
+  display: none;
 }
 
 /**
@@ -466,5 +509,5 @@ template {
  */
 
 [hidden] {
-    display: none;
+  display: none;
 }

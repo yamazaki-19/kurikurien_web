@@ -16,8 +16,7 @@
 
 <!-- 自作のJS（Splideを使う） -->
 <script src="<?= get_template_directory_uri(); ?>/js/fadein.js"></script>
-<script async defer src="https://www.instagram.com/embed.js"></script>
-
+<script async src="//www.instagram.com/embed.js"></script>
 </body>
 
 </html>
