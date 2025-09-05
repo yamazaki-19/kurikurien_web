@@ -191,7 +191,7 @@
                         お味。栗の刻みも贅沢にお入れした<br />
                         クリームはまるでモンブラン！
                     </p>
-                    <a href="https://www.takoman.co.jp/2024/09/06/2024autumn-sweets/" target="_blank" rel="noopener noreferrer" class="more_btn">もっと見る<span class="arrow">→</span></a>
+                    <a href="https://www.takoman.co.jp/2025/08/28/autumn-daisakyu-2/" target="_blank" rel="noopener noreferrer" class="more_btn">もっと見る<span class="arrow">→</span></a>
                 </div>
             </div>
         </div>
